@@ -29,6 +29,8 @@ stress-ng --cpu 2 --timeout 120s
 
 # RAM
 
+These screenshots show the system during a memory stress test using stress-ng. The output from the monitoring tool indicates that memory usage increases significantly while the test is running, confirming that the system RAM is being heavily utilised. This demonstrates how the operating system manages memory under load and helps identify any performance impact caused by high memory usage.
+
   ![](week6_os/ramttest.png)
 
   ![](week6_os/ramtest2.png)
