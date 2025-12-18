@@ -25,4 +25,8 @@ stress-ng --cpu 2 --timeout 120s
 
 ```
 
-# Network through put test
+# Network throughput test
+This network throughput test uses iperf3 to measure the network speed between the workstation and the server. The server listens for incoming traffic while the workstation sends data to it. The results show the transfer speed in megabits per second, confirming that the network connection is working correctly.
+
+  ![](week6_os/ntpt.png)
+
