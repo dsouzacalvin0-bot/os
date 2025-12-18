@@ -28,7 +28,7 @@ Documents firewall rules that restrict SSH access to a single trusted workstatio
 Details the creation of a non-root administrative user and the configuration of sudo privileges.
 
 # Adding SSH Key 
-
+  ![](week4_os/addsshkey.png)
 # Remote Administration and Configuration Evidence
 
 Includes before-and-after configuration file comparisons and evidence of commands executed remotely via SSH.
