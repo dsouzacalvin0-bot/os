@@ -22,7 +22,24 @@ This is how the SSH looked before
 # Firewall Configuration
 
 Documents firewall rules that restrict SSH access to a single trusted workstation and shows the complete ruleset.
+![](wee4_os/firewallbefore.png)
+![](wee4_os/firewallbafter.png)
+# firewall configuration Command.
 
+``` bash
+
+# this will allow the ip address of desktop to access any port on the server.
+
+sudo ufw allow from 10.0.2.5
+
+#reload the firewall
+
+sudo ufw reload
+
+sudo ufw status verbose
+
+
+```
 # User and Privilege Management
 
 Details the creation of a non-root administrative user and the configuration of sudo privileges.
