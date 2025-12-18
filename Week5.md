@@ -49,7 +49,7 @@ sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 
 CONFIG_SSH="/etc/ssh/sshd_config"
 AUTO_UPGRADES="/etc/apt/apt.conf.d/20auto-upgrades"
-TRUSTED_IP="172.20.10.3"
+TRUSTED_IP="10.0.2.6"
 
 print_header() {
     echo
