@@ -38,3 +38,4 @@ sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 
 
 ```
+  ![](week5_os/intrutiondetection.png)
