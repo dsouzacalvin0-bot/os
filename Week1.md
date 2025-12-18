@@ -32,3 +32,5 @@ This is the Ip adresss of the server
 ![](week1_os/ipaddress.png)
 
 # Ip Adress of Desktop
+Thid is the Ip Adress of Desktop
+![](week1_os/ipaddressD.png)
