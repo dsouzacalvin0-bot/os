@@ -9,3 +9,5 @@ This section explains the planned performance testing methodology, including how
 In addition, a threat model is used to identify realistic security risks that could affect the system. For each threat, suitable mitigation strategies are proposed to guide the security decisions made in later phases. This planning stage helps ensure that security and performance are considered together throughout the rest of the coursework.
 
 # Ping Test 
+
+  ![](week2_os/ping_test_successs.png)
