@@ -29,6 +29,7 @@ stress-ng --cpu 2 --timeout 120s
 
 # RAM
 
+  ![](week6_os/ramtest.png)
 
 
 # Network throughput test
