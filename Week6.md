@@ -42,3 +42,16 @@ This network throughput test uses iperf3 to measure the network speed between th
 
   ![](week6_os/ntpt.png)
 
+# System Performance Optimisation
+
+Improving system performance starts with understanding how the system is actually being used. For CPU performance, the focus was on checking whether any processes were causing bottlenecks and making sure the available cores were being used effectively. Monitoring tools were used to observe CPU behaviour under load and identify any unnecessary strain on the system.
+
+Memory performance was improved by monitoring RAM usage and reducing excessive swapping, which can slow the system down. Adjusting memory settings helped ensure that applications relied more on physical memory rather than swap, especially during heavy workloads.
+
+Disk performance was analysed by observing read and write activity during testing. Configuration changes were made to reduce unnecessary disk operations, and the impact of storage speed on overall performance was considered.
+
+Network performance was tested by measuring latency and throughput between systems. These tests helped confirm whether the network was performing as expected and whether any tuning was needed to improve data transfer reliability.
+
+System-level tuning involved reviewing active services and disabling anything that was not required. This reduced background resource usage and helped the system focus on the workloads being tested. Monitoring tools were used throughout to ensure the system remained stable.
+
+Finally, performance testing tools were used to stress the system and measure the impact of changes. By comparing results before and after optimisation, it was possible to confirm whether the adjustments made had a positive effect on overall system performance.
