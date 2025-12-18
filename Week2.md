@@ -1,5 +1,7 @@
 # week 2  Security Planning and Testing Methodology
 
+# Inntroduction
+
 Phase 2 focuses on planning how the system will be secured and how its performance will be tested later in the project. Before making any changes to the server, it is important to define a clear security baseline and a consistent testing approach so that results can be measured accurately.
 
 This section explains the planned performance testing methodology, including how the server will be monitored remotely from the workstation to reduce any impact on system performance. It also outlines a security configuration checklist covering key areas such as SSH hardening, firewall configuration, access control, automatic updates, user permissions, and basic network security.
