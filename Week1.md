@@ -26,3 +26,6 @@ Ubuntu Server 22.04 and Ubuntu 22.04 Desktop were chosen because they provide a 
   ![](week1_os/Image3.png)
 
 The Third Screen shot shows the output of the top command, which provides a real-time view of system performance and running processes. The display shows the total number of tasks, CPU usage, memory usage, and swap usage, with most processes in a sleeping state and the CPU largely idle. This indicates that the server is running normally with low system load and no resource contention at the time of observation.
+
+# IP Adress of server
+This is the Ip adresss of the server 
