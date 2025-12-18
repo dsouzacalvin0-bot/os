@@ -10,16 +10,16 @@ In addition, a threat model is used to identify realistic security risks that co
 
 # Application Selection Overview
 
-This section explains the purpose of selecting different applications for performance testing. Each application is chosen to represent a specific type of workload so that different aspects of system behaviour can be analysed.
+This section explains the purpose of selecting multiple applications for performance testing. Each application represents a different workload type so that various aspects of system behaviour can be tested rather than focusing on a single resource.
 
 # Application Selection Matrix
 
-An application selection matrix is used to list each chosen application, its workload type, and the reason it was selected. This helps justify how each application contributes to testing CPU, memory, disk, or network performance.
+The application selection matrix lists all chosen applications along with their workload type and justification. This makes it clear why each application was selected and how it contributes to evaluating CPU usage, memory consumption, disk activity, or network performance.
 
 # Installation Process
 
-This section documents how each application was installed on the server using SSH and command-line tools. Exact installation commands are included to show how the setup was completed and to ensure the process can be repeated.
+This section documents how each application was installed on the server using SSH and command-line tools only. Exact installation commands are included to demonstrate correct package management and ensure the installation steps are clear and repeatable.
 
 # Expected Resource Usage and Monitoring Strategy
 
-Expected resource usage is outlined for each application to predict how it will affect system performance. A monitoring strategy is also described to explain how CPU, memory, disk, and network activity will be measured during testing.
+Expected resource usage is outlined for each application to provide an idea of how the system is likely to behave during testing. A monitoring strategy is also described to explain which tools will be used to measure CPU, memory, disk, and network performance for each workload.
