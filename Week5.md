@@ -39,3 +39,73 @@ sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 
 ```
   ![](week5_os/intrutiondetection.png)
+
+
+# Security basline script 
+
+``` bash
+#!/usr/bin/env bash
+# Server hardening verification script
+
+CONFIG_SSH="/etc/ssh/sshd_config"
+AUTO_UPGRADES="/etc/apt/apt.conf.d/20auto-upgrades"
+TRUSTED_IP="172.20.10.3"
+
+print_header() {
+    echo
+    echo "==== $1 ===="
+}
+
+print_result() {
+    local status="$1"
+    local message="$2"
+
+    if [[ "$status" == "ok" ]]; then
+        echo "  [+] OK: $message"
+    else
+        echo "  [-] ERROR: $message"
+    fi
+}
+
+echo "Starting Security Compliance Check"
+
+print_header "SSH Settings Review"
+
+grep -Eqs '^[[:space:]]*PasswordAuthentication[[:space:]]+no' "$CONFIG_SSH" \
+    && print_result ok "SSH password authentication is disabled" \
+    || print_result fail "SSH password authentication is enabled"
+
+grep -Eqs '^[[:space:]]*PermitRootLogin[[:space:]]+no' "$CONFIG_SSH" \
+    && print_result ok "Root login over SSH is blocked" \
+    || print_result fail "Root login over SSH is permitted"
+
+print_header "Firewall Status"
+
+if ufw status | grep -q "Status: active"; then
+    print_result ok "UFW firewall is running"
+
+    ufw status | grep -Eq "22/tcp.*ALLOW.*$TRUSTED_IP" \
+        && print_result ok "SSH access restricted to trusted host" \
+        || print_result fail "SSH firewall restriction missing or incorrect"
+else
+    print_result fail "UFW firewall is not enabled"
+fi
+
+print_header "System Protection Services"
+
+systemctl is-active --quiet fail2ban \
+    && print_result ok "fail2ban service is active" \
+    || print_result fail "fail2ban service is not running"
+
+aa-status --enabled &>/dev/null \
+    && print_result ok "AppArmor enforcement is enabled" \
+    || print_result fail "AppArmor is disabled"
+
+[[ -f "$AUTO_UPGRADES" ]] \
+    && print_result ok "Unattended upgrades are configured" \
+    || print_result fail "Automatic updates configuration not found"
+
+echo
+echo "==== Security Audit Finished ===="
+
+```
