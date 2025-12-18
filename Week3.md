@@ -20,6 +20,23 @@ The application selection matrix lists all chosen applications along with their 
 
 This section documents how each application was installed on the server using SSH and command-line tools only. Exact installation commands are included to demonstrate correct package management and ensure the installation steps are clear and repeatable.
 
+# Commands
+
+
+``` bash
+#adds the user named celvin_bot in users by default
+sudo adduser celvin_bot
+
+#assigning them sudo privilege
+
+sudo usermod -aG sudo celvin_bot
+#above command will add the user to the sudoers group.
+
+
+## we can use ssh for verification .
+
+```
+
 # Expected Resource Usage and Monitoring Strategy
 
 Expected resource usage is outlined for each application to provide an idea of how the system is likely to behave during testing. A monitoring strategy is also described to explain which tools will be used to measure CPU, memory, disk, and network performance for each workload.
