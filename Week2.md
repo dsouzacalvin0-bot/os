@@ -11,3 +11,5 @@ In addition, a threat model is used to identify realistic security risks that co
 # Ping Test 
 
   ![](week2_os/pingtest.png)
+
+The ping results show that the workstation and the server can successfully communicate with each other over the network. Both systems are responding to ping requests with no packet loss, which confirms that the network connection is working as expected. The low and consistent response times also indicate a stable and reliable connection between the two virtual machines.
