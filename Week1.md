@@ -18,4 +18,5 @@ Ubuntu Server 22.04 and Ubuntu 22.04 Desktop were chosen because they provide a 
   ![](week1_os/Image1.png)
 
   The Screenshot shows the output of the basic system information commands I executed on the Ubuntu Server. The uname command confirms the system is running a Linux kernel, while hostname displays the configured server hostname. The lsb_release -a command identifies the operating system as Ubuntu 24.04 LTS. The free -h command is used to check system memory usage and confirms that sufficient RAM is available, and df -h displays disk usage, showing the root filesystem mounted on /dev/sda2 with available storage space. Together, these commands verify that the server is installed correctly and operating as expected.
-  
+
+  ![](week1_os/Image2.png)
