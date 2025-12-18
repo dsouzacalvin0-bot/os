@@ -1,6 +1,6 @@
 # week 3 Application Selection for Performance Testing
 
-#Introduction
+# Introduction
 
 Phase 3 focuses on selecting a range of applications that can be used to evaluate system performance under different types of workload. The purpose of this phase is to ensure that the server is tested in a realistic and structured way, covering multiple aspects of operating system behaviour rather than relying on a single test.
 
