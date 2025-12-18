@@ -24,9 +24,7 @@ This is how the SSH looked before
 Documents firewall rules that restrict SSH access to a single trusted workstation and shows the complete ruleset.
 ![](week4_os/firewallbefore.png)
 
-
-
-
+  ![](week4_os/firewallatfter.png)
 # firewall configuration Command.
 
 ``` bash
