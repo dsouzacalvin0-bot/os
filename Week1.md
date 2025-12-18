@@ -17,3 +17,8 @@ Ubuntu Server 22.04 and Ubuntu 22.04 Desktop were chosen because they provide a 
 
   ![](week1_os/Firstimage.png)
 
+
+
+  ![](/Week 1 First image.png)
+  ![](week1_os/Week 1 First image.png)
+
