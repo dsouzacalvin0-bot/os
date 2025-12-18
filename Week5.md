@@ -25,3 +25,16 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 cat /etc/apt/apt.conf.d/50unattended-upgrades | grep "security"
 
 ```
+# Intrution Detection 
+``` bash
+
+#intrustion detection
+
+sudo apt install fail2ban -y
+
+# we create a copy so that we dont damage the main configuration file.
+sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+
+
+
+```
