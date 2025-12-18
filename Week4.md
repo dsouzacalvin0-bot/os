@@ -22,10 +22,8 @@ This is how the SSH looked before
 # Firewall Configuration
 
 Documents firewall rules that restrict SSH access to a single trusted workstation and shows the complete ruleset.
-![](wee4_os/firewallbefore.png)
+![](week4_os/firewallbefore.png)
 
-
-![](wee4_os/firewallafter.png)
 
 
 
