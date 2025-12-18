@@ -1,6 +1,6 @@
 # week 2  Security Planning and Testing Methodology
 
-# Inntroduction
+# Introduction
 
 Phase 2 focuses on planning how the system will be secured and how its performance will be tested later in the project. Before making any changes to the server, it is important to define a clear security baseline and a consistent testing approach so that results can be measured accurately.
 
