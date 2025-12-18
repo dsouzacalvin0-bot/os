@@ -51,9 +51,7 @@ Details the creation of a non-root administrative user and the configuration of 
 
 # Adding SSH Key 
   ![](week4_os/addsshkey.png)
-# Remote Administration and Configuration Evidence
 
-Includes before-and-after configuration file comparisons and evidence of commands executed remotely via SSH.
 
 # Key based Authentication login proof 
   ![](week4_os/authssh.png)
