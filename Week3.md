@@ -41,6 +41,7 @@ sudo usermod -aG sudo celvin_bot
 
 Expected resource usage is outlined for each application to provide an idea of how the system is likely to behave during testing. A monitoring strategy is also described to explain which tools will be used to measure CPU, memory, disk, and network performance for each workload.
 
+``` bash
 stress-ng (CPU Test)
 Expected: CPU usage will jump to 100% for each core being tested. Memory and disk I/O should remain low.
 stress-ng (Memory Test)
@@ -49,7 +50,8 @@ dd (Disk Test)
 Expected: Disk I/O metrics (iostat) will show high megabytes written per second. The CPU will show a high waiting percentage for the disk.
 iperf3 (Network Test)
 Expected: Network traffic will max out the VM adapter's bandwidth. CPU usage will be moderate, as it processes network packets.
-#
+```
+``` bash
 stress-ng (CPU):
 Test Command (Server): stress-ng --cpu 1 --timeout 60s
 Monitoring (via SSH): uptime and top -b -n 1 | grep "Cpu(s)"
@@ -63,3 +65,4 @@ iperf3 (Network):
 Test Command (Server): iperf3 -s
 Test Command (Workstation): iperf3 -c <server_IP_address> or GUI application.
 Monitoring: The iperf3 client output itself provides the main metric (e.g., "Mbits/sec").
+```
