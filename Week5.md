@@ -7,3 +7,21 @@ Phase 5 focuses on improving the security of the server and setting up basic mon
 In this section, access control is implemented using SELinux or AppArmor, and automatic security updates are configured to keep the system up to date. Fail2ban is also set up to help detect and block repeated unauthorised login attempts. Alongside these controls, two scripts are created: one to verify that all security settings are correctly applied on the server, and another to monitor system performance remotely from the workstation using SSH.
 
 All scripts are fully commented and demonstrated to show how they work and why they are used. This phase helps ensure the system is both secure and observable before moving on to detailed performance testing.
+
+# Instalation docment 
+``` bash
+
+##installation documentation.
+
+sudo apt update && sudo apt install unattended-upgrades -y
+
+## configuration
+
+sudo dpkg-reconfigure -plow unattended-upgrades
+
+
+## verification can be done using.
+
+cat /etc/apt/apt.conf.d/50unattended-upgrades | grep "security"
+
+```
