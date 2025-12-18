@@ -15,8 +15,10 @@ Covers SSH key-based authentication, disabling password login, and verifying suc
 
 This is how the SSH looked before 
   ![](week4_os/beforeconfig.png)
+ This is the SSH After
+   ![](week4_os/after1.png)
 
-
+  ![](week4_os/after2.png)
 # Firewall Configuration
 
 Documents firewall rules that restrict SSH access to a single trusted workstation and shows the complete ruleset.
