@@ -33,3 +33,5 @@ The overall system configuration was reviewed to ensure security settings were a
 # Active Network Services and Listening Ports
 
 This screenshot shows the output of the ss -tulpn command, which lists all active network connections and listening ports on the server. It displays which services are currently running, the ports they are listening on, and the processes associated with them, such as SSH, Apache, and iperf3. This helps identify which services are exposed on the network and supports the service audit by confirming that only required services are active.
+
+  ![](week7_os/tulpnscore.png)
