@@ -8,7 +8,7 @@ In this section, access control is implemented using SELinux or AppArmor, and au
 
 All scripts are fully commented and demonstrated to show how they work and why they are used. This phase helps ensure the system is both secure and observable before moving on to detailed performance testing.
 
-# Installation docment 
+# Installation document 
 ``` bash
 
 ##installation documentation.
