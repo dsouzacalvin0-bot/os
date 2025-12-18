@@ -11,6 +11,12 @@ The findings from these checks are documented in a security audit report, along 
 # Security scanning with Lynis:
 Lynis was used to scan the system for security weaknesses and misconfigurations. It provides a security score and recommendations for improving the system.
 
+This was the results before
+  ![](week7_os/lynisbefore.png)
+
+This is the results after 
+  ![](week7_os/lynisafter.png)
+  
 # Network security assessment with nmap:
 nmap was used to check open ports and running services to ensure only necessary network services were accessible.
 
