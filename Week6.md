@@ -25,6 +25,8 @@ stress-ng --cpu 2 --timeout 120s
 
 ```
 
+  ![](week6_os/cpustress.png)
+
 # RAM
 
 
