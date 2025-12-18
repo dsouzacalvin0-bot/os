@@ -32,4 +32,4 @@ Details the creation of a non-root administrative user and the configuration of 
 Includes before-and-after configuration file comparisons and evidence of commands executed remotely via SSH.
 
 # Key based Authentication login proof 
-
+  ![](week4_os/authssh.png)
