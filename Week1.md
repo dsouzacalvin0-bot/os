@@ -24,3 +24,5 @@ Ubuntu Server 22.04 and Ubuntu 22.04 Desktop were chosen because they provide a 
   The second Screen shot shows the output of the htop command, which is an interactive process monitoring tool. The display shows current CPU usage, memory usage, system uptime, and the list of running processes. The output indicates low CPU load, low memory usage relative to total available RAM, and that most running processes are system services such as systemd, confirming the server is running normally with minimal resource usage at idle.
 
   ![](week1_os/Image3.png)
+
+The Third Screen shot shows the output of the top command, which provides a real-time view of system performance and running processes. The display shows the total number of tasks, CPU usage, memory usage, and swap usage, with most processes in a sleeping state and the CPU largely idle. This indicates that the server is running normally with low system load and no resource contention at the time of observation.
