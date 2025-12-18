@@ -41,42 +41,65 @@ sudo usermod -aG sudo celvin_bot
 
 Expected resource usage is outlined for each application to provide an idea of how the system is likely to behave during testing. A monitoring strategy is also described to explain which tools will be used to measure CPU, memory, disk, and network performance for each workload.
 
-``` bash
-3. Expected Resource Profiles
-stress-ng (CPU Test)
-Expected:
-CPU usage is expected to increase to near 100% on the core being tested. Memory usage and disk I/O should remain low.
-stress-ng (Memory Test)
-Expected:
-Memory usage shown by free -h will increase as available memory decreases. Swap usage may occur, while CPU usage remains moderate.
-dd (Disk Test)
-Expected:
-Disk I/O metrics from iostat will show high write throughput. CPU wait time is expected to increase due to disk access.
-iperf3 (Network Test)
-Expected:
-Network traffic will approach the maximum bandwidth of the virtual network adapter. CPU usage will remain moderate while processing network traffic.
-```
+## 3. Expected Resource Profiles
 
-``` bash
-stress-ng (CPU)
-Test Command (Server):
-stress-ng --cpu 1 --timeout 60s
-Monitoring (via SSH):
-uptime
-top -b -n 1 | grep "Cpu(s)"
-stress-ng (Memory)
-Test Command (Server):
-stress-ng --vm 1 --vm-bytes <SRV_RAM>G --timeout 60s
-Monitoring (via SSH):
-free -h
-dd (Disk I/O)
-Test Command (Server):
-dd if=/dev/zero of=testfile bs=1G count=1 oflag=direct
-Monitoring (via SSH):
-iostat -xz 1 10
-iperf3 (Network)
-Test Command (Server):
-iperf3 -s
-Test Command (Workstation):
-iperf3 -c <server_IP_address>
-```
+- **stress-ng (CPU Test)**
+  - **Expected:**  
+    CPU usage is expected to increase to near 100% on the core being tested. Memory usage and disk I/O should remain low.
+
+- **stress-ng (Memory Test)**
+  - **Expected:**  
+    Memory usage shown by `free -h` will increase as available memory decreases. Swap usage may occur, while CPU usage remains moderate.
+
+- **dd (Disk Test)**
+  - **Expected:**  
+    Disk I/O metrics from `iostat` will show high write throughput. CPU wait time is expected to increase due to disk access.
+
+- **iperf3 (Network Test)**
+  - **Expected:**  
+    Network traffic will approach the maximum bandwidth of the virtual network adapter. CPU usage will remain moderate while processing network traffic.
+
+---
+
+## 4. Monitoring Strategy and Test Commands
+
+- **stress-ng (CPU)**
+  - **Test Command (Server):**
+    ```bash
+    stress-ng --cpu 1 --timeout 60s
+    ```
+  - **Monitoring (via SSH):**
+    ```bash
+    uptime
+    top -b -n 1 | grep "Cpu(s)"
+    ```
+
+- **stress-ng (Memory)**
+  - **Test Command (Server):**
+    ```bash
+    stress-ng --vm 1 --vm-bytes <SRV_RAM>G --timeout 60s
+    ```
+  - **Monitoring (via SSH):**
+    ```bash
+    free -h
+    ```
+
+- **dd (Disk I/O)**
+  - **Test Command (Server):**
+    ```bash
+    dd if=/dev/zero of=testfile bs=1G count=1 oflag=direct
+    ```
+  - **Monitoring (via SSH):**
+    ```bash
+    iostat -xz 1 10
+    ```
+
+- **iperf3 (Network)**
+  - **Test Command (Server):**
+    ```bash
+    iperf3 -s
+    ```
+  - **Test Command (Workstation):**
+    ```bash
+    iperf3 -c <server_IP_address>
+    ```
