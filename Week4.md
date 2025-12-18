@@ -26,6 +26,7 @@ Documents firewall rules that restrict SSH access to a single trusted workstatio
 # User and Privilege Management
 
 Details the creation of a non-root administrative user and the configuration of sudo privileges.
+  ![](week4_os/usermanage.png)
 
 # Adding SSH Key 
   ![](week4_os/addsshkey.png)
