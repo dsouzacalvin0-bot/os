@@ -1,6 +1,6 @@
 # week 5  Advanced Security and Monitoring Infrastructure 
 
-#Introduction
+# Introduction
 
 Phase 5 focuses on improving the security of the server and setting up basic monitoring to observe how the system behaves over time. This phase builds on the security controls introduced earlier and aims to make the system more resistant to common attacks while allowing its performance to be monitored remotely.
 
