@@ -11,7 +11,10 @@ All configuration tasks are performed remotely via SSH in line with the administ
 
 # SSH Configuration and Access Control
 
-Covers SSH key-based authentication, disabling password login, and verifying successful SSH access from the workstation.
+Covers SSH key-based authentication, disabling password login, and verifying successful SSH access from the workstation. 
+This is how the SSH looked before 
+
+
 
 # Firewall Configuration
 
