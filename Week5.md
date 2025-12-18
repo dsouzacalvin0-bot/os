@@ -109,3 +109,40 @@ echo
 echo "==== Security Audit Finished ===="
 
 ```
+# Remote Monitoring Script 
+#!/usr/bin/env bash
+# remote-healthcheck.sh
+# Lightweight remote system status collector
+
+REMOTE_USER="admin"
+REMOTE_HOST="10.0.2.6"
+
+banner() {
+    echo
+    echo "==== $1 ===="
+}
+
+echo "Initiating Remote Health Check"
+echo "Target host: ${REMOTE_USER}@${REMOTE_HOST}"
+
+ssh "${REMOTE_USER}@${REMOTE_HOST}" bash << 'EOF'
+show_section() {
+    echo
+    echo ">> $1"
+}
+
+show_section "Uptime and Load Average"
+uptime
+
+show_section "Memory Consumption"
+free -h
+
+show_section "Root Filesystem Usage"
+df -h /
+
+show_section "Highest CPU Consumers"
+ps -eo pid,comm,%cpu --sort=-%cpu | head -n 6
+EOF
+
+echo
+echo "Remote Monitoring Session Ended"
