@@ -25,6 +25,8 @@ stress-ng --cpu 2 --timeout 120s
 
 ```
 
+This screenshot shows the system during a CPU performance test. The monitoring output indicates increased CPU activity while memory usage remains relatively low. This confirms that the workload is primarily CPU-intensive and allows observation of how the operating system schedules processes under load.
+
   ![](week6_os/cpustress.png)
 
 # RAM
