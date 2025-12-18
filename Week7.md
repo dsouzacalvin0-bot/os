@@ -18,13 +18,13 @@ This is the results after
   ![](week7_os/lynisafter.png)
   
 # Network security assessment with nmap:
-nmap was used to check open ports and running services to ensure only necessary network services were accessible.
+nmap was used to scan the server from the workstation to identify open ports and active network services. This helped confirm that only required services were accessible and that the firewall rules were working as intended.
 
 # Access control verification:
-Access control settings were reviewed to confirm that user permissions and security policies were correctly enforced.
+Access control settings were reviewed to ensure that user permissions, SSH access, and security policies were correctly enforced. This check confirmed that only authorised users could access the system and perform administrative tasks.
 
 # Service audit:
-All running services were checked to identify which services were active and to justify why each one was required.
+All running services were reviewed to identify which services were active on the server. Each service was assessed to confirm that it was necessary for system operation, helping reduce the attack surface by disabling unused services.
 
 # System configuration review:
-The overall system configuration was reviewed to ensure security settings were applied correctly and followed best practices.
+The overall system configuration was reviewed to ensure security settings were applied correctly and consistently. This included checking system services, network settings, and security configurations to confirm they followed best practices.
