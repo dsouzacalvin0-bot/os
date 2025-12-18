@@ -23,7 +23,12 @@ This is how the SSH looked before
 
 Documents firewall rules that restrict SSH access to a single trusted workstation and shows the complete ruleset.
 ![](wee4_os/firewallbefore.png)
-![](wee4_os/firewallbafter.png)
+
+
+![](wee4_os/firewallafter.png)
+
+
+
 # firewall configuration Command.
 
 ``` bash
