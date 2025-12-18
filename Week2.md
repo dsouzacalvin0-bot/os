@@ -10,4 +10,4 @@ In addition, a threat model is used to identify realistic security risks that co
 
 # Ping Test 
 
-  ![](week2_os/ping_test_successs.png)
+  ![](week2_os/pingtest.png)
