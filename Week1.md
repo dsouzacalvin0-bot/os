@@ -31,3 +31,4 @@ The Third Screen shot shows the output of the top command, which provides a real
 This is the Ip adresss of the server 
 ![](week1_os/ipaddress.png)
 
+# Ip Adress of Desktop
