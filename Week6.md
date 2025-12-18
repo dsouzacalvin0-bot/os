@@ -14,4 +14,15 @@ Stress-ng is a system stress-testing tool used to load CPU, memory, disk, and ot
 iperf3 measures network performance by testing bandwidth, latency, and throughput between two hosts.
 dd is a low-level Unix utility used for raw data copying, often for disk benchmarking, backups, and data wiping.
 
+## 1. CPU stress
+``` bash
+sudo apt update
+sudo apt install stress-ng
+
+# stress command :
+
+stress-ng --cpu 2 --timeout 120s
+
+```
+
 
